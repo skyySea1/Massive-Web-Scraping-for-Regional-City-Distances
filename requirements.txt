@@ -1,0 +1,4 @@
+# requirements.txt
+
+selenium==4.1.0
+pandas==1.4.0
