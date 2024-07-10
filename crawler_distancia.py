@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.edge.service import Service as EdgeService
 from selenium.webdriver.edge.options import Options
 import pandas as pd
-from Info import regions
+from module.regions import regions
 import time
 import openpyxl
 # Configuração do WebDriver
