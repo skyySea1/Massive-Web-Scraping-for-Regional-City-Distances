@@ -8,24 +8,30 @@ from selenium.webdriver.edge.options import Options
 import pandas as pd
 from Info import regions
 import time
-
+import openpyxl
 # Configuração do WebDriver
 service = EdgeService()
 options = webdriver.EdgeOptions()
-options.add_argument('--log-level=3')
-# options.add_argument('headless')
+
+
+options.add_argument('--log-level=1')
+
+
+options.add_argument('headless')
 driver = webdriver.Edge(service=service, options=options)
 
 
 # Definição das variáveis de origem e destinos
 origens = {
-    "Salvador, Bahia": regions['Região Metropolitana de Salvador'],
-    "Feira de Santana, Bahia": regions['Centro-Norte Baiano'],
-    "Vitória da Conquista, Bahia": regions['Centro-Sul Baiano'],
-    "Barreiras, Bahia": regions['Oeste Baiano'],
-    "Juazeiro, Bahia": regions['Norte Baiano'],
-    "Serrinha, Bahia": regions['Nordeste Baiano'],
-    "Itabuna, Bahia": regions['Sul Baiano']
+    "Paulo Afanoso, Bahia": regions['Itaparica, Bahia'],
+    "Paulo Afanoso, Bahia": regions['Semiárido Nordeste II'],
+    #  "Salvador, Bahia": regions['Região Metropolitana de Salvador'],
+    #  "Feira de Santana, Bahia": regions['Centro-Norte Baiano'],
+    # "Vitória da Conquista, Bahia": regions['Centro-Sul Baiano'],
+    # "Barreiras, Bahia": regions['Oeste Baiano'],
+    # "Juazeiro, Bahia": regions['Norte Baiano'],
+    # "Serrinha, Bahia": regions['Nordeste Baiano'],
+    # "Itabuna, Bahia": regions['Sul Baiano']
 }
 
 # Lista para armazenar os resultados
@@ -37,7 +43,7 @@ for origem, destinos in origens.items():
         try:
             # Abrir página inicial do Google Maps
             driver.get("https://www.google.com/maps")
-            wait = WebDriverWait(driver, 30)  #   tempo de espera
+            wait = WebDriverWait(driver, 15)  #   tempo de espera
             # Aguardar até que o campo de pesquisa esteja disponível
             search_box = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="searchboxinput"]')))
             search_box.clear()
@@ -58,7 +64,7 @@ for origem, destinos in origens.items():
                 'Destino': destino,
                 'Distância': distancia_texto
             })
-
+        
         except Exception as e:
             print(f"Erro ao calcular a rota de {origem} para {destino}: {str(e)}")
 
