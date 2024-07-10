@@ -90,9 +90,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull re
 
 📫 Contato
 Estou sempre aberto a feedbacks e novas oportunidades. Entre em contato comigo pelo LinkedIn ou envie um email para seu-email@example.com.
-Para adicionar uma linha grande em Markdown, você pode usar uma sequência de três ou mais caracteres de sublinhado (`_`), hífen (`-`), ou asterisco (`*`). Aqui estão alguns exemplos:
 
----
 
 # 🌟 Implementações Futuras
 
