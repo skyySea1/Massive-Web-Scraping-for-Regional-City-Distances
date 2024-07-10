@@ -4,6 +4,9 @@
 
 Este projeto em Python automatiza a obtenção de distâncias entre cidades na Bahia utilizando o Google Maps como fonte de dados.
 
+-criar um executável
+-criar um gui selecionável, com conversor de dados, que permite também sua inserção
+
 ## Funcionalidades
 
 - **Automatização**: Utiliza Selenium para interagir automaticamente com o Google Maps.
