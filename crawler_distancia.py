@@ -23,15 +23,15 @@ driver = webdriver.Edge(service=service, options=options)
 
 # Definição das variáveis de origem e destinos
 origens = {
-    "Paulo Afanoso, Bahia": regions['Itaparica, Bahia'],
-    "Paulo Afanoso, Bahia": regions['Semiárido Nordeste II'],
-    #  "Salvador, Bahia": regions['Região Metropolitana de Salvador'],
-    #  "Feira de Santana, Bahia": regions['Centro-Norte Baiano'],
-    # "Vitória da Conquista, Bahia": regions['Centro-Sul Baiano'],
-    # "Barreiras, Bahia": regions['Oeste Baiano'],
-    # "Juazeiro, Bahia": regions['Norte Baiano'],
-    # "Serrinha, Bahia": regions['Nordeste Baiano'],
-    # "Itabuna, Bahia": regions['Sul Baiano']
+    "Paulo Afanoso, Bahia": regions.get[['Itaparica, Bahia'],['Semiárido Nordeste II']],
+    "Paulo Afanoso, Bahia": regions.get['Semiárido Nordeste II'],
+      "Salvador, Bahia": regions.get['Região Metropolitana de Salvador'],
+      "Feira de Santana, Bahia": regions.get['Centro-Norte Baiano'],
+     "Vitória da Conquista, Bahia": regions.get['Centro-Sul Baiano'],
+     "Barreiras, Bahia": regions.get['Oeste Baiano'],
+     "Juazeiro, Bahia": regions.get['Norte Baiano'],
+     "Serrinha, Bahia": regions.get['Nordeste Baiano'],
+     "Itabuna, Bahia": regions.get['Sul Baiano']
 }
 
 # Lista para armazenar os resultados
