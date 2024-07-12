@@ -1,14 +1,4 @@
-<a href="#english-version" style="background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px;">English Version</a>
+<a href="#english-version" style="background-color: #4CAF50;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;border-radius: 12px;">English Version</a>
 
 [![Switch to English Version](https://img.shields.io/badge/Switch%20to-English%20Version-blue?style=flat-square)](#english-version)
 
@@ -92,7 +82,7 @@ O script irá iterar sobre todas as combinações de origem e destino definidas 
 
 - **`crawler_distancia.py`**: Script principal para iniciar o web scraping.
 - **`regions.py`**: Módulo contendo as definições das regiões e suas respectivas cidades.
-- **`Info/`**: Pasta contendo arquivos de suporte, como o módulo `regions.py`.
+- **`Module/`**: Pasta contendo arquivos de suporte, como o módulo `regions.py`.
 
 ## 🌟 Oportunidades de Contribuição
 .
@@ -235,7 +225,7 @@ The script will iterate over all origin and destination combinations defined in 
 ## Project Structure
 - **`crawler_distancia.py`**: Main script to start web scraping.
 - **`regions.py`**: Module containing region definitions and their respective cities.
-- **`Info/`**: Folder containing support files, such as the `regions.py` module.
+- **`Module/`**: Folder containing support files, such as the `regions.py` module.
 
 ## 🌟 Contribution Opportunities
 Contributions are welcome! Feel free to open issues and pull requests for improvements, new features, or fixes.
