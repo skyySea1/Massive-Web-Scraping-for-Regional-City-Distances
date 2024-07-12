@@ -1,7 +1,21 @@
+<a href="#english-version" style="background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;">English Version</a>
+
+[![Switch to English Version](https://img.shields.io/badge/Switch%20to-English%20Version-blue?style=flat-square)](#english-version)
 
 
 # 🌟 Web Scraping de Distâncias entre Cidades por Regiões na Bahia
-Este é o meu projeto de Web Scraping de Distâncias entre Cidades, uma solução inovadora desenvolvida para atender demandas reais de meu ambiente de trabalho, proporcionando automação e eficiência na coleta de dados geográficos customizáveis
+Projeto de Web Scraping de Distâncias entre Cidades, uma solução inovadora desenvolvida para atender demandas reais de meu ambiente de trabalho, proporcionando automação e eficiência na coleta de dados geográficos customizáveis
+
 ## 🚀 Visão Geral
 Este projeto em Python automatiza a obtenção de distâncias entre cidades na Bahia utilizando o Google Maps como fonte de dados.
 ---
@@ -88,10 +102,6 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull re
 
 
 
-📫 Contato
-Estou sempre aberto a feedbacks e novas oportunidades. Entre em contato comigo pelo LinkedIn ou envie um email para seu-email@example.com.
-
-
 # 🌟 Implementações Futuras
 
 Estamos sempre buscando melhorar e expandir as funcionalidades do nosso projeto de **Web Scraping de Distâncias entre Cidades**. Aqui estão algumas das principais implementações futuras planejadas:
@@ -153,4 +163,109 @@ Este projeto foi desenvolvido por [SkyySea1](https://github.com/skyySea1). Você
 
 
 
+---
+
+## English Version
+
+---
+
+# 🌟 Web Scraping de Distâncias entre Cidades por Regiões na Bahia
+
+## 🌟 City Distance Web Scraping by Regions in Bahia
+This is my City Distance Web Scraping project, an innovative solution developed to meet real demands in my work environment, providing automation and efficiency in collecting customizable geographic data.
+
+## 🚀 Overview
+This Python project automates the retrieval of distances between cities in Bahia using Google Maps as the data source.
+
+## 🔧 Features
+
+- **Automation**: Uses Selenium to automatically interact with Google Maps.
+- **Region Organization**: Cities are grouped by specific regions in the state of Bahia.
+- **Data Export**: Results are saved in an Excel file for further analysis.
+
+## 🎯 Objective
+The main objective of this project is to automate the collection of distance data between cities in Bahia, grouped by regions, for use in various applications, from logistical planning to geographical studies without using any external API or querying a database.
+
+## 💡 Technical Highlights
+- **Selenium WebDriver**: Used to navigate and interact with Google Maps.
+- **Pandas**: For data manipulation and export.
+- **Edge WebDriver**: Configuration for the Microsoft Edge browser, with flexibility for adaptation to other browsers.
+- **Flexible Structure**: Easily modifiable to add new regions and cities.
+
+## Prerequisites
+Before running the script, make sure you have Python installed on your system.
+Also, you need to have the appropriate WebDriver for your browser configured in your directory (just download and place it in the same folder). 
+- I used [Edge](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH)
+
+## 🚀 How to Run
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/skyySea1/Massive-Web-Scraping-for-Regional-City-Distances
+   cd seu-repositorio
+   ```
+
+### Virtual Environment Setup (Optional)
+2. Activate the virtual environment. Depending on your operating system:
+
+   For Windows:
+   ```bash
+   venv\Scripts\activate
+   ```
+
+   For macOS/Linux:
+   ```bash
+   source venv/bin/activate
+   ```
+
+3. Install the project dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Running the Script
+To run the project:
+
+```bash
+python crawler_distancia.py
+```
+
+The script will iterate over all origin and destination combinations defined in `regions.py`, collect distances via Google Maps, and save the results in an Excel file (`distancias_rotas.xlsx`) in the project's root folder.
+
+## Project Structure
+- **`crawler_distancia.py`**: Main script to start web scraping.
+- **`regions.py`**: Module containing region definitions and their respective cities.
+- **`Info/`**: Folder containing support files, such as the `regions.py` module.
+
+## 🌟 Contribution Opportunities
+Contributions are welcome! Feel free to open issues and pull requests for improvements, new features, or fixes.
+
+## 🌟 Future Implementations
+
+### 1. Create an Executable
+We plan to develop an executable to further simplify the use of our project. With this, any user can run the program without needing to set up a Python environment.
+
+### 2. Create a Selectable GUI
+We are developing a graphical user interface (GUI) that will make interaction with the project even more intuitive and user-friendly. The GUI will allow:
+- **Interactive Selection**: Users can select origins and destinations directly in the interface.
+- **Data Conversion**: Tools to convert different types of data simply and efficiently.
+- **Data Insertion**: Possibility to insert new data directly through the interface, facilitating the update and expansion of the database.
+
+---
+
+## 💡 Additional Ideas
+Besides the main implementations, we are considering other improvements and features for the future:
+- **API Integration**: To obtain more accurate and real-time data.
+- **Cross-Platform Support**: Ensuring the executable works perfectly on different operating systems.
+- **Performance Improvements**: Code optimizations to reduce execution time and increase efficiency.
+
+---
+
+## 📫 Stay in Touch
+We are always open to feedback and new ideas. Contact us for suggestions or to learn more about the progress of future implementations:
+- **LinkedIn**: [Marcell Henrique](linkedin.com/in/henrir1)
+- **Email**: henrir1020@gmail.com
+
+## Author
+This project was developed by [SkyySea1](https://github.com/skyySea1). You can contact me via LinkedIn, Discord, email, or Instagram for any questions, suggestions, or corrections.
 
