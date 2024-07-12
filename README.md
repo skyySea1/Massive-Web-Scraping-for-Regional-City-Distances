@@ -1,4 +1,4 @@
-<a href="#english-version" style="background-color: #4CAF50;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;border-radius: 12px;">English Version</a>
+
 
 [![Switch to English Version](https://img.shields.io/badge/Switch%20to-English%20Version-blue?style=flat-square)](#english-version)
 
