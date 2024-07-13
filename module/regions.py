@@ -1,3 +1,4 @@
+# essa estrutura é um dicionário de listas, onde a chave é o nome da região e o valor é uma lista de cidades pertencentes a essa região
 regions = {
       "Região Metropolitana de Salvador": [
           "CAMAÇARI, Bahia",
