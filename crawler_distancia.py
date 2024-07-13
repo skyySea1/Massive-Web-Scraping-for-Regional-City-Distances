@@ -12,21 +12,19 @@ import openpyxl
 # Configuração do WebDriver
 service = EdgeService()
 options = webdriver.EdgeOptions()
-
-
 options.add_argument('--log-level=1')
-
-
+options.add_argument('--disable-extensions')
 options.add_argument('headless')
+
 driver = webdriver.Edge(service=service, options=options)
 
 
 # Definição das variáveis de origem e destinos
+# dicionário que recebe a lista de destinos do módulo regions	e associa esses valores a chave origem(que é a cidade de origem)
 origens = {
-    "Paulo Afanoso, Bahia": regions.get[['Itaparica, Bahia'],['Semiárido Nordeste II']],
-    "Paulo Afanoso, Bahia": regions.get['Semiárido Nordeste II'],
-      "Salvador, Bahia": regions.get['Região Metropolitana de Salvador'],
-      "Feira de Santana, Bahia": regions.get['Centro-Norte Baiano'],
+     "Paulo Afanoso, Bahia": regions.get[['Itaparica, Bahia'],['Semiárido Nordeste II']],
+     "Salvador, Bahia": regions.get['Região Metropolitana de Salvador'],
+     "Feira de Santana, Bahia": regions.get['Centro-Norte Baiano'],
      "Vitória da Conquista, Bahia": regions.get['Centro-Sul Baiano'],
      "Barreiras, Bahia": regions.get['Oeste Baiano'],
      "Juazeiro, Bahia": regions.get['Norte Baiano'],
@@ -38,7 +36,16 @@ origens = {
 resultados = []
 
 # Loop para cada origem e seus respectivos destinos
+# a variável origem é a chave do dicionário origens, e destinos é o valor associado a essa chave
+# a iteração é feita sobre o método items() do dicionário, que retorna uma tupla com a chave e o valor associado
+#ou seja, para cada origem (chave) há um destino (valor) que por sua vez compõe uma lista de valores 
+#exemplo de iteração: para a origem "Paulo Afanoso, Bahia", os destinos são "Itaparica, Bahia" e "Semiárido Nordeste II"
+# imprima todos os pares chave-valor de juazeiro e ele imprimirá, juazeiro: cidade 1; juazeiro cidade 2 até a lista acabar
 for origem, destinos in origens.items():
+    # para o método items funcionar, o dicionário origens deve ser um dicionário de listas e não um dicionário de dicionários (porque ele retorna uma tupla, que é uma lista imutável)
+    #também é possível usar o método values() que retorna apenas os valores associados a cada chave
+    #ou seja, para cada origem há uma lista de destinos, e laço segue essa lógica
+    #o método items() não aceita parâmetros, se fosse para imprimir apenas as cidades, seria necessário usar o método values()
     for destino in destinos:
         try:
             # Abrir página inicial do Google Maps

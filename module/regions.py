@@ -1,4 +1,8 @@
 # essa estrutura é um dicionário de listas, onde a chave é o nome da região e o valor é uma lista de cidades pertencentes a essa região
+# as cidade contidas na listas de regiões são os destinos a serem relacionados a cidade de origem de cada região, o código vai iterar sob eles
+# regions é um dicionário de listas, onde a chave é o nome da região e o valor é uma lista de cidades pertencentes a essa região
+#região metropolitana de salvador é uma chave do dicionário regions, e o valor associado a essa chave é uma lista de cidades
+# se eu usar regions.get('Região Metropolitana de Salvador') ele me retorna a lista de cidades associadas a essa região
 regions = {
       "Região Metropolitana de Salvador": [
           "CAMAÇARI, Bahia",
