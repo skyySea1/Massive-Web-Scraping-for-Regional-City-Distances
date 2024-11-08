@@ -18,11 +18,11 @@ options.add_argument('headless')
 
 driver = webdriver.Edge(service=service, options=options)
 
-
+final_date = driver,
 # Definição das variáveis de origem e destinos
 # dicionário que recebe a lista de destinos do módulo regions	e associa esses valores a chave origem(que é a cidade de origem)
 origens = {
-     "Paulo Afanoso, Bahia": regions.get[['Itaparica, Bahia'],['Semiárido Nordeste II']],
+     "Paulo Afanoso, Bahia": regions.get['Itaparica, Bahia'], 'Semiárido Nordeste II'],
      "Salvador, Bahia": regions.get['Região Metropolitana de Salvador'],
      "Feira de Santana, Bahia": regions.get['Centro-Norte Baiano'],
      "Vitória da Conquista, Bahia": regions.get['Centro-Sul Baiano'],
